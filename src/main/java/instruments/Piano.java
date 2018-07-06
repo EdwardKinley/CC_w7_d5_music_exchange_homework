@@ -15,9 +15,8 @@ public class Piano extends Instrument implements IPlay, ISell {
             int sellPrice,
             MaterialType material,
             ColourType colour,
-            FamilyType family,
             int numberOfKeys) {
-        super(buyPrice, sellPrice, material, colour, family);
+        super(buyPrice, sellPrice, material, colour, FamilyType.KEYBOARD);
         this.numberOfKeys = numberOfKeys;
     }
 

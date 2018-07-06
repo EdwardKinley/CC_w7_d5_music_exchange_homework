@@ -14,7 +14,7 @@ public class TrumpetTest {
 
     @Before
     public void before() {
-        trumpet = new Trumpet(100, 140, MaterialType.WOOD, ColourType.BROWN, FamilyType.STRING, 3);
+        trumpet = new Trumpet(100, 140, MaterialType.WOOD, ColourType.BROWN, 3);
     }
 
     @Test
@@ -49,7 +49,7 @@ public class TrumpetTest {
 
     @Test
     public void canGetFamily() {
-        assertEquals(FamilyType.STRING, trumpet.getFamily());
+        assertEquals(FamilyType.BRASS, trumpet.getFamily());
     }
 
     @Test

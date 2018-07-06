@@ -15,9 +15,8 @@ public class Trumpet extends Instrument implements IPlay, ISell {
             int sellPrice,
             MaterialType material,
             ColourType colour,
-            FamilyType family,
             int numberOfValves) {
-        super(buyPrice, sellPrice, material, colour, family);
+        super(buyPrice, sellPrice, material, colour, FamilyType.BRASS);
         this.numberOfValves = numberOfValves;
     }
 

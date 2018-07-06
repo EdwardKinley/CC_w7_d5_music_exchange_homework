@@ -1,4 +1,5 @@
 import instruments.Guitar;
+import instruments.Piano;
 import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
@@ -15,12 +16,14 @@ public class ShopTest {
     Shop shop1;
     ArrayList<ISell> stock;
     Guitar guitar;
+    Piano piano;
 
     @Before
     public void before() {
         stock = new ArrayList<>();
         shop1 = new Shop("Ray's Music Exchange II", stock);
-        guitar = new Guitar(200, 250, MaterialType.WOOD, ColourType.BROWN, FamilyType.STRING, 12);
+        guitar = new Guitar(200, 250, MaterialType.WOOD, ColourType.BROWN, 12);
+//        piano = new Piano()
     }
 
     @Test
@@ -35,10 +38,15 @@ public class ShopTest {
     }
 
     @Test
-    public void canAddStock() {
-        shop1.addStock(guitar);
+    public void canAddStockSingle() {
+        shop1.addStockSingle(guitar);
         assertEquals(1, shop1.getStockNumber());
     }
+
+//    @Test
+//    public void canAddStockMultiple() {
+//
+//    }
 
 
 }

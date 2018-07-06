@@ -24,7 +24,12 @@ public class Shop {
         return stock.size();
     }
 
-    public void addStock(ISell item) {
+    public void addStockSingle(ISell item) {
         stock.add(item);
     }
+
+    public void addStockMultiple(ArrayList<ISell> newStock) {
+        for (ISell item : newStock) stock.add(item);
+    }
+
 }

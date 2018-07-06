@@ -14,7 +14,7 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar(100, 140, MaterialType.WOOD, ColourType.BROWN, FamilyType.STRING,6);
+        guitar = new Guitar(100, 140, MaterialType.WOOD, ColourType.BROWN,6);
     }
 
     @Test

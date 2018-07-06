@@ -15,9 +15,8 @@ public class Guitar extends Instrument implements IPlay, ISell {
             int sellPrice,
             MaterialType material,
             ColourType colour,
-            FamilyType family,
             int numberOfStrings) {
-        super(buyPrice, sellPrice, material, colour, family);
+        super(buyPrice, sellPrice, material, colour, FamilyType.STRING);
         this.numberOfStrings = numberOfStrings;
     }
 

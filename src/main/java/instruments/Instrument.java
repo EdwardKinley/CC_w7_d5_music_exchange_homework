@@ -45,6 +45,10 @@ public abstract class Instrument {
         return family;
     }
 
+    public void setFamily(FamilyType newFamily) {
+        family = newFamily;
+    }
+
     public int calculateMarkup() {
         return sellPrice - buyPrice;
     }
