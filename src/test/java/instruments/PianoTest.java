@@ -52,5 +52,10 @@ public class PianoTest {
         assertEquals(FamilyType.KEYBOARD, piano.getFamily());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("plink", piano.play());
+    }
+
 
 }

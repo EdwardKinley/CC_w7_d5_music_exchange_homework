@@ -3,8 +3,9 @@ package instruments;
 import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
+import interfaces.IPlay;
 
-public class Piano extends Instrument {
+public class Piano extends Instrument implements IPlay {
 
     private int numberOfKeys;
 
@@ -21,6 +22,10 @@ public class Piano extends Instrument {
 
     public int getNumberOfKeys() {
         return numberOfKeys;
+    }
+
+    public String play() {
+        return "plink";
     }
 
 

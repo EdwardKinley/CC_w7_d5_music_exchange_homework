@@ -3,8 +3,9 @@ package instruments;
 import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
+import interfaces.IPlay;
 
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay {
 
     private int numberOfStrings;
 
@@ -23,6 +24,9 @@ public class Guitar extends Instrument {
         return numberOfStrings;
     }
 
+    public String play() {
+        return "strum";
+    }
 
 
 }

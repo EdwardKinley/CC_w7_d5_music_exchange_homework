@@ -52,5 +52,10 @@ public class GuitarTest {
         assertEquals(FamilyType.STRING, guitar.getFamily());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("strum", guitar.play());
+    }
+
 
 }
