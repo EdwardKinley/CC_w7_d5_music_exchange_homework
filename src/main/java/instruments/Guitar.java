@@ -13,7 +13,7 @@ public class Guitar extends Instrument {
         return numberOfStrings;
     }
 
-    public int getPrice() {
+    public int getBuyPrice() {
         return this.getBuyPrice();
     }
 

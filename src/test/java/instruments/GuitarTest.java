@@ -16,7 +16,13 @@ public class GuitarTest {
 
     @Test
     public void canGetBuyPrice() {
-        assertEquals(100, guitar.getPrice());
+        assertEquals(100, guitar.getBuyPrice());
     }
+
+    @Test
+    public void canGetSellPrice() {
+        assertEquals(140, guitar.getSellPrice());
+    }
+
 
 }
