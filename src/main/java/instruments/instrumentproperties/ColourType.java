@@ -4,6 +4,7 @@ public enum ColourType {
 
     BROWN,
     BLACK,
-    BRONZE
+    BRONZE,
+    WHITE
 
 }

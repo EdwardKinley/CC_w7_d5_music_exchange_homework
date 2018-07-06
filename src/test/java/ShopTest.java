@@ -13,40 +13,45 @@ import static org.junit.Assert.assertEquals;
 
 public class ShopTest {
 
-    Shop shop1;
+    Shop shop;
     ArrayList<ISell> stock;
     Guitar guitar;
     Piano piano;
+    ArrayList<ISell> instruments;
 
     @Before
     public void before() {
         stock = new ArrayList<>();
-        shop1 = new Shop("Ray's Music Exchange II", stock);
+        shop = new Shop("Ray's Music Exchange II", stock);
         guitar = new Guitar(200, 250, MaterialType.WOOD, ColourType.BROWN, 12);
-//        piano = new Piano()
+        piano = new Piano(1200, 1600, MaterialType.WOOD, ColourType.WHITE, 88);
+        instruments = new ArrayList<>();
+        instruments.add(guitar);
+        instruments.add(piano);
     }
 
     @Test
     public void canGetName() {
-        assertEquals("Ray's Music Exchange II", shop1.getName());
+        assertEquals("Ray's Music Exchange II", shop.getName());
     }
 
     @Test
     public void beginsWithNoStock() {
-        assertEquals(0, shop1.getStock().size());
-        assertEquals(0, shop1.getStockNumber());
+        assertEquals(0, shop.getStock().size());
+        assertEquals(0, shop.getStockNumber());
     }
 
     @Test
     public void canAddStockSingle() {
-        shop1.addStockSingle(guitar);
-        assertEquals(1, shop1.getStockNumber());
+        shop.addStockSingle(guitar);
+        assertEquals(1, shop.getStockNumber());
     }
 
-//    @Test
-//    public void canAddStockMultiple() {
-//
-//    }
+    @Test
+    public void canAddStockMultiple() {
+        shop.addStockMultiple(instruments);
+        assertEquals(2, shop.getStockNumber());
+    }
 
 
 }
