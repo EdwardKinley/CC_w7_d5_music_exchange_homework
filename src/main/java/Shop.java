@@ -19,4 +19,12 @@ public class Shop {
     public ArrayList<ISell> getStock() {
         return stock;
     }
+
+    public int getStockNumber() {
+        return stock.size();
+    }
+
+    public void addStock(ISell item) {
+        stock.add(item);
+    }
 }
