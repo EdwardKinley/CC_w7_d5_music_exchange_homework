@@ -511,7 +511,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuitarTest.canGetSellPrice">
+  <component name="RunManager" selected="JUnit.GuitarTest.canGetNumberOfStrings">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -528,6 +528,29 @@
       <option name="PACKAGE_NAME" value="instruments" />
       <option name="MAIN_CLASS_NAME" value="instruments.GuitarTest" />
       <option name="METHOD_NAME" value="canGetBuyPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GuitarTest.canGetNumberOfStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicExchange_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="instruments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="instruments" />
+      <option name="MAIN_CLASS_NAME" value="instruments.GuitarTest" />
+      <option name="METHOD_NAME" value="canGetNumberOfStrings" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -602,9 +625,11 @@
     <list>
       <item itemvalue="JUnit.GuitarTest.canGetBuyPrice" />
       <item itemvalue="JUnit.GuitarTest.canGetSellPrice" />
+      <item itemvalue="JUnit.GuitarTest.canGetNumberOfStrings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuitarTest.canGetNumberOfStrings" />
         <item itemvalue="JUnit.GuitarTest.canGetSellPrice" />
         <item itemvalue="JUnit.GuitarTest.canGetBuyPrice" />
       </list>

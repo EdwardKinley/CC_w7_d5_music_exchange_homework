@@ -24,5 +24,10 @@ public class GuitarTest {
         assertEquals(140, guitar.getSellPrice());
     }
 
+    @Test
+    public void canGetNumberOfStrings() {
+        assertEquals(6, guitar.getNumberOfStrings());
+    }
+
 
 }
