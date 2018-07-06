@@ -18,6 +18,10 @@ public abstract class Instrument {
         return sellPrice;
     }
 
+    public int calculateMarkup() {
+        return sellPrice - buyPrice;
+    }
+
 
 
 }
