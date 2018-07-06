@@ -1,5 +1,6 @@
 package instruments;
 
+import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.MaterialType;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar(100, 140, MaterialType.WOOD, 6);
+        guitar = new Guitar(100, 140, MaterialType.WOOD, ColourType.BROWN, 6);
     }
 
     @Test
@@ -38,6 +39,11 @@ public class GuitarTest {
     @Test
     public void canGetMaterial() {
         assertEquals(MaterialType.WOOD, guitar.getMaterial());
+    }
+
+    @Test
+    public void canGetColour() {
+        assertEquals(ColourType.BROWN, guitar.getColour());
     }
 
 
