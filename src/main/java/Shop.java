@@ -36,4 +36,8 @@ public class Shop {
     public void removeStockSingle(ISell item) {
         stock.remove(item);
     }
+
+    public void removeStockMultiple(ArrayList<ISell> items) {
+        for (ISell item : items) stock.remove(item);
+    }
 }

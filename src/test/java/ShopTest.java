@@ -1,11 +1,13 @@
 import instruments.Guitar;
 import instruments.Piano;
+import instruments.Trumpet;
 import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
 import interfaces.ISell;
 import org.junit.Before;
 import org.junit.Test;
+import othersaleitems.OtherSaleItem;
 
 import java.util.ArrayList;
 
@@ -18,6 +20,11 @@ public class ShopTest {
     Guitar guitar;
     Piano piano;
     ArrayList<ISell> instruments;
+    Trumpet trumpet;
+    OtherSaleItem shades;
+    OtherSaleItem fedora;
+    OtherSaleItem guitarStrings;
+    ArrayList<ISell> items;
 
     @Before
     public void before() {
@@ -28,6 +35,15 @@ public class ShopTest {
         instruments = new ArrayList<>();
         instruments.add(guitar);
         instruments.add(piano);
+        trumpet = new Trumpet(180, 250, MaterialType.METAL, ColourType.BRONZE, 3);
+        shades = new OtherSaleItem(10, 15, "dark shades");
+        fedora = new OtherSaleItem(15, 22, "black fedora");
+        guitarStrings = new OtherSaleItem(4, 7, "Pro Arte high tension classical guitar string set (6 strings)");
+        items = new ArrayList<>();
+        items.add(trumpet);
+        items.add(shades);
+        items.add(fedora);
+        items.add(guitarStrings);
     }
 
     @Test
@@ -58,6 +74,16 @@ public class ShopTest {
         shop.addStockMultiple(instruments);
         shop.removeStockSingle(guitar);
         assertEquals(1, shop.getStockNumber());
+    }
+
+    @Test
+    public void canRemoveStockMultiple() {
+        shop.addStockMultiple(items);
+        ArrayList<ISell> itemsToRemove = new ArrayList<>();
+        itemsToRemove.add(fedora);
+        itemsToRemove.add(shades);
+        shop.removeStockMultiple(itemsToRemove);
+        assertEquals(2, shop.getStockNumber());
     }
 
 
