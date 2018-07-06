@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e77b9c-8add-4c04-81ca-a10e0794f7d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShopTest.java" afterDir="false" />
     </list>
@@ -152,12 +151,14 @@
           <file leaf-file-name="Shop.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Shop.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+                <state relative-caret-position="432">
+                  <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#283#284#0" expanded="true" />
                     <element signature="e#309#310#0" expanded="true" />
+                    <element signature="e#431#432#0" expanded="true" />
+                    <element signature="e#464#465#0" expanded="true" />
                     <element signature="e#377#378#0" expanded="true" />
                     <element signature="e#404#405#0" expanded="true" />
                     <element signature="e#419#420#0" expanded="true" />
@@ -267,11 +268,14 @@
           <file leaf-file-name="ShopTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/ShopTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-53">
-                  <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+                <state relative-caret-position="315">
+                  <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
                   <folding>
+                    <element signature="imports" expanded="true" />
                     <element signature="e#336#337#0" expanded="true" />
                     <element signature="e#357#358#0" expanded="true" />
+                    <element signature="e#1687#1688#0" expanded="true" />
+                    <element signature="e#1716#1717#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -818,28 +822,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopTest.canGetTillBlance">
+  <component name="RunManager" selected="JUnit.All in MusicExchange_test (3)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="All in MusicExchange_test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MusicExchange_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="All in MusicExchange_test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicExchange_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -873,6 +860,23 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="All in MusicExchange_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicExchange_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="ShopTest.canGetTillBlance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicExchange_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -890,20 +894,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopTest.canSellItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicExchange_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="instruments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="instruments" />
-      <option name="MAIN_CLASS_NAME" value="instruments.TriangleTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShopTest" />
+      <option name="METHOD_NAME" value="canSellItem" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -952,19 +950,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in MusicExchange_test (3)" />
-      <item itemvalue="JUnit.TriangleTest" />
-      <item itemvalue="JUnit.All in MusicExchange_test (2)" />
       <item itemvalue="JUnit.All in MusicExchange_test (1)" />
       <item itemvalue="JUnit.ShopTest.canGetTillBlance" />
+      <item itemvalue="JUnit.ShopTest.canSellItem" />
+      <item itemvalue="JUnit.All in MusicExchange_test" />
+      <item itemvalue="JUnit.All in MusicExchange_test (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in MusicExchange_test (3)" />
+        <item itemvalue="JUnit.All in MusicExchange_test" />
+        <item itemvalue="JUnit.ShopTest.canSellItem" />
         <item itemvalue="JUnit.ShopTest.canGetTillBlance" />
         <item itemvalue="JUnit.All in MusicExchange_test (1)" />
-        <item itemvalue="JUnit.All in MusicExchange_test (2)" />
-        <item itemvalue="JUnit.TriangleTest" />
-        <item itemvalue="JUnit.All in MusicExchange_test (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -982,9 +980,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopTest_canRemoveStockMultiple - 2018.07.06 at 20h 35m 42s.xml">
-      <configuration name="ShopTest.canRemoveStockMultiple" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_MusicExchange_test_(2) - 2018.07.06 at 20h 35m 47s.xml">
       <configuration name="All in MusicExchange_test (2)" configurationId="JUnit" />
     </history-entry>
@@ -1012,6 +1007,9 @@
     <history-entry file="All_in_MusicExchange_test_(1) - 2018.07.06 at 22h 48m 55s.xml">
       <configuration name="All in MusicExchange_test (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShopTest_canGetTillBlance - 2018.07.06 at 22h 54m 01s.xml">
+      <configuration name="ShopTest.canGetTillBlance" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -1025,12 +1023,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32969698" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17596567" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17596567" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.32969698" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.21818182" />
       <window_info anchor="right" id="Gradle" order="1" />
@@ -1300,17 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ShopTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/instruments/Guitar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1341,12 +1328,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="432">
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#283#284#0" expanded="true" />
             <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
             <element signature="e#377#378#0" expanded="true" />
             <element signature="e#404#405#0" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
@@ -1359,6 +1348,20 @@
             <element signature="e#754#755#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#880#881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
           </folding>
         </state>
       </provider>

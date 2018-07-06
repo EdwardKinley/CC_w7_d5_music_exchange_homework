@@ -1,4 +1,5 @@
 import interfaces.ISell;
+import othersaleitems.OtherSaleItem;
 
 import java.util.ArrayList;
 
@@ -52,4 +53,12 @@ public class Shop {
         return aggregatePotentialProfit;
     }
 
+    public void addToTillBalance(int amount) {
+        tillBalance += amount;
+    }
+
+    public void sellItem(ISell item) {
+        this.removeStockSingle(item);
+        this.addToTillBalance(item.getSellPrice());
+    }
 }

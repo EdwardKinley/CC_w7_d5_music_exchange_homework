@@ -96,5 +96,19 @@ public class ShopTest {
         assertEquals(85, shop.getPotentialProfit());
     }
 
+    @Test
+    public void canAddToTillBalance() {
+        shop.addToTillBalance(38);
+        assertEquals(1038, shop.getTillBalance());
+    }
+
+    @Test
+    public void canSellItem() {
+        shop.addStockMultiple(items);
+        shop.sellItem(fedora);
+        assertEquals(3, shop.getStockNumber());
+        assertEquals(1022, shop.getTillBalance());
+    }
+
 
 }
