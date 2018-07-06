@@ -66,10 +66,10 @@ public class Shop {
         for (ISell item : itemsToSell) tillBalance += item.getSellPrice();
     }
 
-//    public String getOtherItemsPriceList(ArrayList<ISell> items) {
-//        String list = "";
-//        for (ISell item : items) list += item.getDescription() + ": £" + item.getSellPrice() + "; ";
-//        return list;
-//    }
+    public String getPriceList(ArrayList<ISell> manyItems) {
+        String list = "";
+        for (ISell item : manyItems) list += item.getDescription() + ": £" + item.getSellPrice() + "; ";
+        return list;
+    }
 
 }

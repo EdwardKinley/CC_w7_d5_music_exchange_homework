@@ -24,7 +24,7 @@ public class ShopTest {
     OtherSaleItem fedora;
     OtherSaleItem guitarStrings;
     ArrayList<ISell> items;
-    ArrayList<ISell> otherItems;
+    ArrayList<ISell> manyItems;
     OtherSaleItem drumsticks;
     OtherSaleItem sheetMusic;
 
@@ -46,14 +46,17 @@ public class ShopTest {
         items.add(shades);
         items.add(fedora);
         items.add(guitarStrings);
-        otherItems = new ArrayList<>();
+        manyItems = new ArrayList<>();
         drumsticks = new OtherSaleItem(10, 16, "drumsticks");
         sheetMusic = new OtherSaleItem(8, 12, "sheet music");
-        otherItems.add(shades);
-        otherItems.add(fedora);
-        otherItems.add(guitarStrings);
-        otherItems.add(drumsticks);
-        otherItems.add(sheetMusic);
+        manyItems.add(shades);
+        manyItems.add(fedora);
+        manyItems.add(guitarStrings);
+        manyItems.add(drumsticks);
+        manyItems.add(sheetMusic);
+        manyItems.add(guitar);
+        manyItems.add(piano);
+        manyItems.add(trumpet);
     }
 
     @Test
@@ -132,11 +135,11 @@ public class ShopTest {
         assertEquals(1037, shop.getTillBalance());
     }
 
-//    @Test
-//    public void canGetOtherItemsPriceList() {
-//        shop.addStockMultiple(otherItems);
-//        assertEquals("dark shades: £15; black fedora: £22; Pro Arte high tension classical guitar string set (6 strings): £7; drumsticks: £16; sheet music: £12; ", shop.getOtherItemsPriceList(otherItems));
-//    }
+    @Test
+    public void canGetPriceList() {
+        shop.addStockMultiple(manyItems);
+        assertEquals("dark shades: £15; black fedora: £22; Pro Arte high tension classical guitar string set (6 strings): £7; drumsticks: £16; sheet music: £12; guitar: £250; piano: £1600; trumpet: £250; ", shop.getPriceList(manyItems));
+    }
 
 
 }

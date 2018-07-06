@@ -5,5 +5,6 @@ public interface ISell {
     int getBuyPrice();
     int getSellPrice();
     int calculateMarkup();
+    String getDescription();
 
 }
