@@ -61,4 +61,9 @@ public class Shop {
         this.removeStockSingle(item);
         this.addToTillBalance(item.getSellPrice());
     }
+
+    public void sellMultipleItems(ArrayList<ISell> itemsToSell) {
+        this.removeStockMultiple(itemsToSell);
+        for (ISell item : itemsToSell) tillBalance += item.getSellPrice();
+    }
 }

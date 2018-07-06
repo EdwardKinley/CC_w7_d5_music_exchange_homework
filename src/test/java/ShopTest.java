@@ -110,5 +110,16 @@ public class ShopTest {
         assertEquals(1022, shop.getTillBalance());
     }
 
+    @Test
+    public void canSellMultipleItems() {
+        shop.addStockMultiple(items);
+        ArrayList<ISell> itemsToSell = new ArrayList<>();
+        itemsToSell.add(fedora);
+        itemsToSell.add(shades);
+        shop.sellMultipleItems(itemsToSell);
+        assertEquals(2, shop.getStockNumber());
+        assertEquals(1037, shop.getTillBalance());
+    }
+
 
 }
