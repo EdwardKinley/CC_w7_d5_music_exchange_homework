@@ -53,5 +53,12 @@ public class ShopTest {
         assertEquals(2, shop.getStockNumber());
     }
 
+    @Test
+    public void canRemoveStockSingle() {
+        shop.addStockMultiple(instruments);
+        shop.removeStockSingle(guitar);
+        assertEquals(1, shop.getStockNumber());
+    }
+
 
 }

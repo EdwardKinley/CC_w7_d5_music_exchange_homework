@@ -1,3 +1,4 @@
+import instruments.Guitar;
 import interfaces.ISell;
 
 import java.util.ArrayList;
@@ -32,4 +33,7 @@ public class Shop {
         for (ISell item : newStock) stock.add(item);
     }
 
+    public void removeStockSingle(ISell item) {
+        stock.remove(item);
+    }
 }
