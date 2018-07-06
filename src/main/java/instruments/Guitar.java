@@ -1,11 +1,17 @@
 package instruments;
 
+import instruments.instrumentproperties.MaterialType;
+
 public class Guitar extends Instrument {
 
     private int numberOfStrings;
 
-    public Guitar(int buyPrice, int sellPrice, int numberOfStrings) {
-        super(buyPrice, sellPrice);
+    public Guitar(
+            int buyPrice,
+            int sellPrice,
+            MaterialType material,
+            int numberOfStrings) {
+        super(buyPrice, sellPrice, material);
         this.numberOfStrings = numberOfStrings;
     }
 
@@ -13,9 +19,6 @@ public class Guitar extends Instrument {
         return numberOfStrings;
     }
 
-    public int getBuyPrice() {
-        return this.getBuyPrice();
-    }
 
 
 }
