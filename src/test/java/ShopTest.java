@@ -86,5 +86,11 @@ public class ShopTest {
         assertEquals(2, shop.getStockNumber());
     }
 
+    @Test
+    public void canGetPotentialProfit() {
+        shop.addStockMultiple(items);
+        assertEquals(85, shop.getPotentialProfit());
+    }
+
 
 }

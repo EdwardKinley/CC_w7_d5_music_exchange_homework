@@ -40,4 +40,10 @@ public class Shop {
     public void removeStockMultiple(ArrayList<ISell> items) {
         for (ISell item : items) stock.remove(item);
     }
+
+    public int getPotentialProfit() {
+        int aggregatePotentialProfit = 0;
+        for (ISell item : stock) aggregatePotentialProfit += item.calculateMarkup();
+        return aggregatePotentialProfit;
+    }
 }
