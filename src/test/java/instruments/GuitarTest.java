@@ -33,6 +33,11 @@ public class GuitarTest {
     }
 
     @Test
+    public void canGetDescription() {
+        assertEquals("guitar", guitar.getDescription());
+    }
+
+    @Test
     public void canGetMarkup() {
         assertEquals(40, guitar.calculateMarkup());
     }

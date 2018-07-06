@@ -8,9 +8,10 @@ public abstract class Instrument {
 
     private int buyPrice;
     private int sellPrice;
-    MaterialType material;
-    ColourType colour;
-    FamilyType family;
+    private MaterialType material;
+    private ColourType colour;
+    private FamilyType family;
+    private String description;
 
     public Instrument(
             int buyPrice,
@@ -23,6 +24,7 @@ public abstract class Instrument {
         this.material = material;
         this.colour = colour;
         this.family = family;
+        this.description = this.getClass().getSimpleName().toLowerCase();
     }
 
     public int getBuyPrice() {
@@ -43,6 +45,10 @@ public abstract class Instrument {
 
     public FamilyType getFamily() {
         return family;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setFamily(FamilyType newFamily) {

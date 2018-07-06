@@ -33,6 +33,11 @@ public class SaxophoneTest {
     }
 
     @Test
+    public void canGetDescription() {
+        assertEquals("saxophone", saxophone.getDescription());
+    }
+
+    @Test
     public void canGetMarkup() {
         assertEquals(150, saxophone.calculateMarkup());
     }

@@ -33,6 +33,11 @@ public class TrumpetTest {
     }
 
     @Test
+    public void canGetDescription() {
+        assertEquals("trumpet", trumpet.getDescription());
+    }
+
+    @Test
     public void canGetMarkup() {
         assertEquals(40, trumpet.calculateMarkup());
     }

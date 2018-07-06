@@ -33,6 +33,11 @@ public class PianoTest {
     }
 
     @Test
+    public void canGetDescription() {
+        assertEquals("piano", piano.getDescription());
+    }
+
+    @Test
     public void canGetMarkup() {
         assertEquals(300, piano.calculateMarkup());
     }

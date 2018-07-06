@@ -1,5 +1,4 @@
 import interfaces.ISell;
-import othersaleitems.OtherSaleItem;
 
 import java.util.ArrayList;
 
@@ -66,4 +65,11 @@ public class Shop {
         this.removeStockMultiple(itemsToSell);
         for (ISell item : itemsToSell) tillBalance += item.getSellPrice();
     }
+
+//    public String getOtherItemsPriceList(ArrayList<ISell> items) {
+//        String list = "";
+//        for (ISell item : items) list += item.getDescription() + ": £" + item.getSellPrice() + "; ";
+//        return list;
+//    }
+
 }

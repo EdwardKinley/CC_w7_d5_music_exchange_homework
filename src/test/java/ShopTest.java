@@ -24,6 +24,9 @@ public class ShopTest {
     OtherSaleItem fedora;
     OtherSaleItem guitarStrings;
     ArrayList<ISell> items;
+    ArrayList<ISell> otherItems;
+    OtherSaleItem drumsticks;
+    OtherSaleItem sheetMusic;
 
     @Before
     public void before() {
@@ -43,6 +46,14 @@ public class ShopTest {
         items.add(shades);
         items.add(fedora);
         items.add(guitarStrings);
+        otherItems = new ArrayList<>();
+        drumsticks = new OtherSaleItem(10, 16, "drumsticks");
+        sheetMusic = new OtherSaleItem(8, 12, "sheet music");
+        otherItems.add(shades);
+        otherItems.add(fedora);
+        otherItems.add(guitarStrings);
+        otherItems.add(drumsticks);
+        otherItems.add(sheetMusic);
     }
 
     @Test
@@ -120,6 +131,12 @@ public class ShopTest {
         assertEquals(2, shop.getStockNumber());
         assertEquals(1037, shop.getTillBalance());
     }
+
+//    @Test
+//    public void canGetOtherItemsPriceList() {
+//        shop.addStockMultiple(otherItems);
+//        assertEquals("dark shades: £15; black fedora: £22; Pro Arte high tension classical guitar string set (6 strings): £7; drumsticks: £16; sheet music: £12; ", shop.getOtherItemsPriceList(otherItems));
+//    }
 
 
 }

@@ -33,6 +33,11 @@ public class TriangleTest {
     }
 
     @Test
+    public void canGetDescription() {
+        assertEquals("triangle", triangle.getDescription());
+    }
+
+    @Test
     public void canGetMarkup() {
         assertEquals(4, triangle.calculateMarkup());
     }
