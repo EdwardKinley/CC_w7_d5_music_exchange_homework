@@ -1,6 +1,7 @@
 package instruments;
 
 import instruments.instrumentproperties.ColourType;
+import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
 
 public class Guitar extends Instrument {
@@ -12,8 +13,9 @@ public class Guitar extends Instrument {
             int sellPrice,
             MaterialType material,
             ColourType colour,
+            FamilyType family,
             int numberOfStrings) {
-        super(buyPrice, sellPrice, material, colour);
+        super(buyPrice, sellPrice, material, colour, family);
         this.numberOfStrings = numberOfStrings;
     }
 
