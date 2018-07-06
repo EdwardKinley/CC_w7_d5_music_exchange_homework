@@ -2,7 +2,6 @@ import instruments.Guitar;
 import instruments.Piano;
 import instruments.Trumpet;
 import instruments.instrumentproperties.ColourType;
-import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
 import interfaces.ISell;
 import org.junit.Before;
@@ -29,7 +28,7 @@ public class ShopTest {
     @Before
     public void before() {
         stock = new ArrayList<>();
-        shop = new Shop("Ray's Music Exchange II", stock);
+        shop = new Shop("Ray's Music Exchange II", 1000, stock);
         guitar = new Guitar(200, 250, MaterialType.WOOD, ColourType.BROWN, 12);
         piano = new Piano(1200, 1600, MaterialType.WOOD, ColourType.WHITE, 88);
         instruments = new ArrayList<>();
@@ -49,6 +48,11 @@ public class ShopTest {
     @Test
     public void canGetName() {
         assertEquals("Ray's Music Exchange II", shop.getName());
+    }
+
+    @Test
+    public void canGetTillBlance() {
+        assertEquals(1000, shop.getTillBalance());
     }
 
     @Test
