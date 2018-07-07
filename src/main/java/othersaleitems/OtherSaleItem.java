@@ -8,10 +8,7 @@ public class OtherSaleItem implements ISell {
     private int sellPrice;
     private String description;
 
-    public OtherSaleItem(
-            int buyPrice,
-            int sellPrice,
-            String description) {
+    public OtherSaleItem( int buyPrice, int sellPrice, String description) {
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.description = description;

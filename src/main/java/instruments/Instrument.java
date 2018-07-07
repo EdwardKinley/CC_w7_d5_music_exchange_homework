@@ -3,8 +3,9 @@ package instruments;
 import instruments.instrumentproperties.ColourType;
 import instruments.instrumentproperties.FamilyType;
 import instruments.instrumentproperties.MaterialType;
+import interfaces.ISell;
 
-public abstract class Instrument {
+public abstract class Instrument implements ISell {
 
     private int buyPrice;
     private int sellPrice;
@@ -35,6 +36,10 @@ public abstract class Instrument {
         return sellPrice;
     }
 
+    public int calculateMarkup() {
+        return sellPrice - buyPrice;
+    }
+
     public MaterialType getMaterial() {
         return material;
     }
@@ -51,13 +56,6 @@ public abstract class Instrument {
         return description;
     }
 
-    public void setFamily(FamilyType newFamily) {
-        family = newFamily;
-    }
-
-    public int calculateMarkup() {
-        return sellPrice - buyPrice;
-    }
 
 
 

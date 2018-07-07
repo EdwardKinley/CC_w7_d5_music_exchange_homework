@@ -28,6 +28,11 @@ public class TrumpetTest {
     }
 
     @Test
+    public void canGetMarkup() {
+        assertEquals(40, trumpet.calculateMarkup());
+    }
+
+    @Test
     public void canGetNumberOfStrings() {
         assertEquals(3, trumpet.getNumberOfValves());
     }
@@ -35,11 +40,6 @@ public class TrumpetTest {
     @Test
     public void canGetDescription() {
         assertEquals("trumpet", trumpet.getDescription());
-    }
-
-    @Test
-    public void canGetMarkup() {
-        assertEquals(40, trumpet.calculateMarkup());
     }
 
     @Test

@@ -6,7 +6,7 @@ import instruments.instrumentproperties.MaterialType;
 import interfaces.IPlay;
 import interfaces.ISell;
 
-public class Triangle extends Instrument implements IPlay, ISell {
+public class Triangle extends Instrument implements IPlay {
 
     private int lengthInCm;
 
@@ -27,7 +27,5 @@ public class Triangle extends Instrument implements IPlay, ISell {
     public String play() {
         return "ping";
     }
-
-
 
 }
