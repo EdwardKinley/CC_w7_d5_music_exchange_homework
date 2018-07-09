@@ -6,7 +6,7 @@ import instruments.instrumentproperties.MaterialType;
 import interfaces.IPlay;
 import interfaces.ISell;
 
-public class Saxophone extends Instrument implements IPlay {
+public class Saxophone extends Instrument {
 
     private int numberOfToneHoles;
 

@@ -6,7 +6,7 @@ import instruments.instrumentproperties.MaterialType;
 import interfaces.IPlay;
 import interfaces.ISell;
 
-public class Triangle extends Instrument implements IPlay {
+public class Triangle extends Instrument {
 
     private int lengthInCm;
 

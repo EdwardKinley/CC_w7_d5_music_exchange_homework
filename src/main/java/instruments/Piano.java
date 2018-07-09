@@ -6,7 +6,7 @@ import instruments.instrumentproperties.MaterialType;
 import interfaces.IPlay;
 import interfaces.ISell;
 
-public class Piano extends Instrument implements IPlay {
+public class Piano extends Instrument {
 
     private int numberOfKeys;
 
